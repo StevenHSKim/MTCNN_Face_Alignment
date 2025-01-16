@@ -3,6 +3,13 @@ This repository provides a Python script for detecting and aligning faces from i
 
 <br>
 
+## Methodology
+- Save Only the Most Confident Detection: The script saves **"only one image per input image"**, selecting the detected face with the highest confidence.
+- File Naming Convention: The aligned face images are saved with a consistent naming format: `<original_image_name>_aligned.jpg`. For example, if the input file is `example.jpg`, the aligned face will be saved as `example_aligned.jpg`.
+- No Face Detected: If no face is detected in an image, the script prints a message indicating the failure (e.g., `No face detected in example.jpg`) and does not save any output for that image. This ensures that only meaningful results are stored.
+
+<br>
+
 ## Prerequisites
 Make sure you have Python 3.7 or higher installed. Install the required Python packages using the following commands:
 ```bash
@@ -10,13 +17,6 @@ pip install mtcnn
 pip install opencv-python
 pip install matplotlib
 ```
-
-<br>
-
-## Methodology
-- Save Only the Most Confident Detection: The script saves **"only one image per input image"**, selecting the detected face with the highest confidence.
-- File Naming Convention: The aligned face images are saved with a consistent naming format: `<original_image_name>_aligned.jpg`. For example, if the input file is `example.jpg`, the aligned face will be saved as `example_aligned.jpg`.
-- No Face Detected: If no face is detected in an image, the script prints a message indicating the failure (e.g., `No face detected in example.jpg`) and does not save any output for that image. This ensures that only meaningful results are stored.
 
 <br>
 
