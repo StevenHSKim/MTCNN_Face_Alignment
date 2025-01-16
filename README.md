@@ -22,10 +22,7 @@ pip install matplotlib
 
 ## Usage
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/face-alignment-mtcnn.git
-cd face-alignment-mtcnn
-```
+ce-alignment-mtcnn
 
 2. Prepare your dataset:
 Place your input images in a directory (e.g., original_image).
